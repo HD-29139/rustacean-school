@@ -1,0 +1,17 @@
+﻿@model Aluno
+
+@{
+    ViewData["Title"] = "Create Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Adicionar Aluno</h1>
+    <form asp-controller="Aluno" asp-action="Create" method="post">
+        <div class="mb-3"></div>
+        <label for="nome" class="form-label">Nome do aluno</label>
+        <input type="text" asp-for="Nome" class="form-control" id="nome" placeholder="Nome">
+        <button type="submit" class="btn btn-primary">Criar</button>
+    </form>
+
+
+</div>
