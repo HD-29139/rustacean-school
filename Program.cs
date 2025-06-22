@@ -1,4 +1,5 @@
 using escola.Data;
+using escola.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +13,8 @@ builder.Services.AddDbContext<BancoContext>(opt =>
 {
     opt.UseMySql(mySqlConnection, ServerVersion.AutoDetect(mySqlConnection));
 });
+
+builder.Services.AddScoped<IAlunoRepository, AlunoRepository>();
 
 var app = builder.Build();
 
