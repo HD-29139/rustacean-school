@@ -12,5 +12,6 @@ namespace escola.Repository
         List<Aluno> listaralunos();
         Aluno IDfinder(int id);
         Aluno EditarAluno(Aluno aluno);
+        bool Remove(int id);
     }
 }
