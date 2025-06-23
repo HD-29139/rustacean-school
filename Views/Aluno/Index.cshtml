@@ -2,12 +2,18 @@
 
 @{
     ViewData["Title"] = "Alunos Page";
+    var contador = 1;
 }
+
 <div class="text-center">
     <h1 class="display-4">Alunos</h1>
     <table class="table table-dark">
     <thead>
+        <a type="button" class="btn btn-success" asp-controller="Aluno" asp-action="Create">Criar
+                            Aluno</a>
+        
         <tr>
+            
             <th scope="col">#</th>
             <th scope="col">Nome do aluno</th>
             <th scope="col"></th>
@@ -19,12 +25,11 @@
     {
         foreach (Aluno aluno in Model)
         {
-
-            <tbody>
+        <tbody>
                 <tr>
-                    <th scope="row">@aluno.AlunoID</th>
+                    <th scope="row">@contador</th>
                     <td>@aluno.Nome</td>
-                    <td><a type="button" class="btn btn-outline-primary" asp-controller="Aluno" asp-action="Create">Adicionar
+                    <td><a type="button" class="btn btn-outline-primary" asp-controller="Aluno" asp-action="Delete" asp-route-id="@aluno.AlunoID" >Remover
                             aluno</a>
                     </td>
                     <td><a type="button" class="btn btn-outline-primary" asp-controller="Aluno" asp-action="Edit" asp-route-id="@aluno.AlunoID">Editar
@@ -32,6 +37,7 @@
                     </td>
                 </tr>
             </tbody>
+            contador++;
         }
     }
             </table>
