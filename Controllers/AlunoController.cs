@@ -16,14 +16,27 @@ public class AlunoController : Controller
     }
     public IActionResult Index()
     {
-        return View();
+        List<Aluno> aluno = alunoRepository.listaralunos();
+        return View(aluno);
     }
 
     public IActionResult Create()
     {
         return View();
     }
+    public IActionResult Edit(int id)
+    {
+        Aluno aluno = alunoRepository.IDfinder(id);
+        return View(aluno);
+    }
 
+    [HttpPost]
+    public IActionResult Update(Aluno aluno)
+    {
+        alunoRepository.EditarAluno(aluno);
+        return RedirectToAction("Index");
+    }
+    
     [HttpPost]
     public IActionResult Create(Aluno aluno)
     {
