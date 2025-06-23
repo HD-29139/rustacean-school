@@ -29,6 +29,16 @@ public class AlunoController : Controller
         Aluno aluno = alunoRepository.IDfinder(id);
         return View(aluno);
     }
+    public IActionResult Delete(int id)
+    {
+        Aluno aluno = alunoRepository.IDfinder(id);
+        return View(aluno);
+    }
+    public IActionResult Remove(int id)
+    {
+        alunoRepository.Remove(id);
+        return RedirectToAction("Index");
+    }
 
     [HttpPost]
     public IActionResult Update(Aluno aluno)
@@ -36,7 +46,7 @@ public class AlunoController : Controller
         alunoRepository.EditarAluno(aluno);
         return RedirectToAction("Index");
     }
-    
+
     [HttpPost]
     public IActionResult Create(Aluno aluno)
     {
