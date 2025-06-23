@@ -9,5 +9,8 @@ namespace escola.Repository
     public interface IAlunoRepository
     {
         Aluno Create(Aluno aluno);
+        List<Aluno> listaralunos();
+        Aluno IDfinder(int id);
+        Aluno EditarAluno(Aluno aluno);
     }
 }
