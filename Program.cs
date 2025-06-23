@@ -15,6 +15,7 @@ builder.Services.AddDbContext<BancoContext>(opt =>
 });
 
 builder.Services.AddScoped<IAlunoRepository, AlunoRepository>();
+builder.Services.AddScoped<IDisciplinaRepository, DisciplinaRepository>();
 
 var app = builder.Build();
 
