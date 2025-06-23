@@ -42,5 +42,13 @@ namespace escola.Repository
             bancoContext.SaveChanges();
             return alunoEdit;
         }
+
+        public bool Remove(int id)
+        {
+            Aluno aluno = IDfinder(id) ?? throw new Exception("Aluno não encontrado");
+            bancoContext.Alunos.Remove(aluno);
+            bancoContext.SaveChanges();
+            return true;
+        }
     }
 }
