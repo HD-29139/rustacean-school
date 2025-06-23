@@ -1,0 +1,19 @@
+﻿@model Disciplina
+
+@{
+    ViewData["Title"] = "Edit Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Adicionar Disciplina</h1>
+    <form asp-controller="Disciplina" asp-action="Update" method="post">
+        <div class="mb-3">
+        <label for="nome" class="form-label">Nome da Disciplina</label>
+        <input type="text" asp-for="Nome" class="form-control" id="nome" placeholder="Nome">
+        <button type="submit" class="btn btn-primary">Editar</button>
+        </div>
+        <input type="hidden" asp-for="DisciplinaID">
+    </form>
+
+
+</div>
