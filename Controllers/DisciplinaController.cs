@@ -1,21 +1,57 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using escola.Models;
+using escola.Data;
+using escola.Repository;
 
 namespace escola.Controllers;
 
 public class DisciplinaController : Controller
 {
-    private readonly ILogger<DisciplinaController> _logger;
+    private readonly IDisciplinaRepository DisciplinaRepository;
 
-    public DisciplinaController(ILogger<DisciplinaController> logger)
+    public DisciplinaController(IDisciplinaRepository disciplinaRepository)
     {
-        _logger = logger;
+        DisciplinaRepository = disciplinaRepository;
     }
-
     public IActionResult Index()
     {
+        List<Disciplina> disciplina = DisciplinaRepository.listardisciplinas();
+        return View(disciplina);
+    }
+
+    public IActionResult Create()
+    {
         return View();
+    }
+    public IActionResult Edit(int id)
+    {
+        Disciplina disciplina = DisciplinaRepository.IDfinder(id);
+        return View(disciplina);
+    }
+    public IActionResult Delete(int id)
+    {
+        Disciplina disciplina = DisciplinaRepository.IDfinder(id);
+        return View(disciplina);
+    }
+    public IActionResult Remove(int id)
+    {
+        DisciplinaRepository.Remove(id);
+        return RedirectToAction("Index");
+    }
+
+    [HttpPost]
+    public IActionResult Update(Disciplina disciplina)
+    {
+        DisciplinaRepository.EditarDisciplina(disciplina);
+        return RedirectToAction("Index");
+    }
+
+    [HttpPost]
+    public IActionResult Create(Disciplina disciplina)
+    {
+        DisciplinaRepository.Create(disciplina);
+        return RedirectToAction("Index");
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
