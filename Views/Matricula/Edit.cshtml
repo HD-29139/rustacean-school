@@ -1,0 +1,27 @@
+﻿@model Matricula
+
+@{
+    ViewData["Title"] = "Edit Page";
+}
+
+<h2>Editar Matrícula</h2>
+
+<form asp-controller="Matricula" asp-action="Update" method="post">
+    
+
+    <div class="mb-3">
+        <label asp-for="AlunoID" class="form-label">Aluno</label>
+        <select asp-for="AlunoID" class="form-select" asp-items="ViewBag.Alunos"></select>
+        <span asp-validation-for="AlunoID" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="DisciplinaID" class="form-label">Disciplina</label>
+        <select asp-for="DisciplinaID" class="form-select" asp-items="ViewBag.Disciplinas"></select>
+        <span asp-validation-for="DisciplinaID" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Salvar</button>
+    <a asp-action="Index" class="btn btn-secondary ms-2">Cancelar</a>
+    <input type="hidden" asp-for="MatriculaID" />
+</form>
