@@ -1,8 +1,48 @@
-﻿@{
-    ViewData["Title"] = "Matriculas Page";
+﻿@model List<Matricula>
+
+@{
+    ViewData["Title"] = "Matricula Page";
+    var contador = 1;
 }
 
 <div class="text-center">
     <h1 class="display-4">Matriculas</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <table class="table table-dark">
+    <thead>
+        <a type="button" class="btn btn-success" asp-controller="Matricula" asp-action="Create">Criar
+                            Matricula</a>
+        
+        <tr>
+            
+            <th scope="col">#</th>
+            <th scope="col">Nome do Aluno</th>
+            <th scope="col">Nome da Disciplina</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+        </tr>
+    </thead>
+
+    @if (Model != null && Model.Any())
+    {
+        foreach (Matricula matricula in Model)
+        {
+        <tbody>
+                <tr>
+                    <th scope="row">@contador</th>
+                    <td>@matricula.Aluno.Nome</td>
+                    <td>@matricula.Disciplina.Nome</td>
+                    <td><a type="button" class="btn btn-outline-primary" asp-controller="Matricula" asp-action="Delete" asp-route-id="@matricula.MatriculaID" >Remover
+                            Matricula</a>
+                    </td>
+                    <td><a type="button" class="btn btn-outline-primary" asp-controller="Matricula" asp-action="Edit" asp-route-id="@matricula.MatriculaID">Editar
+                            Matricula</a>
+                    </td>
+                </tr>
+            </tbody>
+            contador++;
+        }
+    }
+            </table>
+
+
 </div>
