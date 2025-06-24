@@ -1,0 +1,14 @@
+﻿@model Matricula
+
+@{
+    ViewData["Title"] = "Deleting Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Remover Matricula</h1>
+        <div class="mb-3">
+        <h1 class="display-4">Quer mesmo remover a matricula do Aluno (@Model.Aluno.Nome) da Disciplina (@Model.Disciplina.Nome)</h1>
+        <a type="submit" class="btn btn-danger" asp-controller="Matricula" asp-action="Remove" asp-route-id="@Model.MatriculaID">Remover</a>
+        <a type="submit" class="btn btn-primary" asp-controller="Matricula" asp-action="Index">Voltar</a>
+        </div>
+</div>
