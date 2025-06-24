@@ -1,4 +1,5 @@
 using escola.Data;
+using escola.Models;
 using escola.Repository;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,6 +17,7 @@ builder.Services.AddDbContext<BancoContext>(opt =>
 
 builder.Services.AddScoped<IAlunoRepository, AlunoRepository>();
 builder.Services.AddScoped<IDisciplinaRepository, DisciplinaRepository>();
+builder.Services.AddScoped<IMatriculaRepository, MatriculaRepository>();
 
 var app = builder.Build();
 
