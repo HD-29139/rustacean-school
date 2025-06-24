@@ -54,6 +54,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/steam/escola/Views/Matricula/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/steam/escola/Views/Matricula/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/steam/escola/Views/Matricula/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/steam/escola/Views/Matricula/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
