@@ -4,7 +4,7 @@
     ViewData["Title"] = "Edit Page";
 }
 
-<form asp-controller="Nota" asp-action="Update" method="post">
+<form asp-controller="Nota" asp-action="Edit" method="post">
     <div class="mb-3">
         <label asp-for="MatriculaID" class="form-label">Matrícula</label>
         <select asp-for="MatriculaID" asp-items="ViewBag.Matriculas" class="form-select" required>
