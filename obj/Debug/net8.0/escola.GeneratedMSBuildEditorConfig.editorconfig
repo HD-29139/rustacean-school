@@ -70,6 +70,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/steam/escola/Views/Nota/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90YVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/steam/escola/Views/Nota/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90YVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/steam/escola/Views/Nota/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90YVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/steam/escola/Views/Nota/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90YVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
