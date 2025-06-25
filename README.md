@@ -45,6 +45,7 @@ A Nota é atribuída a uma matrícula específica
 <p align="center">
   <img src="https://github.com/HD-29139/rustacean-school/blob/main/assets/RUST.gif" width="720">
 </p>
-```code
+
+```rust
 “Rustcean” é uma homenagem aos desenvolvedores Rust, mesmo usando C# para nesse projeto.
 ```
