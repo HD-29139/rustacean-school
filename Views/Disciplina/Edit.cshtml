@@ -9,7 +9,7 @@
     <form asp-controller="Disciplina" asp-action="Update" method="post">
         <div class="mb-3">
         <label for="nome" class="form-label">Nome da Disciplina</label>
-        <input type="text" asp-for="Nome" class="form-control" id="nome" placeholder="Nome">
+        <input type="text" asp-for="Nome" class="form-control" id="nome" placeholder="Nome" required>
         <button type="submit" class="btn btn-primary">Editar</button>
         </div>
         <input type="hidden" asp-for="DisciplinaID">
