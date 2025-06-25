@@ -47,5 +47,5 @@ A Nota é atribuída a uma matrícula específica
 </p>
 
 ```rust
-“Rustcean” é uma homenagem aos desenvolvedores Rust, mesmo usando C# para nesse projeto.
+“Rustcean” é uma homenagem aos desenvolvedores Rust, mesmo usando C# nesse projeto.
 ```
