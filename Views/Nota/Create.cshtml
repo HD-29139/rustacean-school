@@ -1,0 +1,23 @@
+﻿@model Nota
+
+@{
+    ViewData["Title"] = "Create Page";
+}
+
+<form asp-controller="Nota" asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="MatriculaID" class="form-label">Matrícula</label>
+        <select asp-for="MatriculaID" asp-items="ViewBag.Matriculas" class="form-select" required>
+            <option value="">Selecione uma matrícula</option>
+        </select>
+        <span asp-validation-for="MatriculaID" class="text-danger"></span>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Valor" class="form-label">Nota</label>
+        <input asp-for="Valor" class="form-control" required/>
+        <span asp-validation-for="Valor" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Salvar</button>
+</form>
