@@ -10,7 +10,7 @@
     <form asp-controller="Matricula" asp-action="Create" method="post">
         <div class="mb-3">
             <label asp-for="AlunoID" class="form-label">Aluno</label>
-            <select asp-for="AlunoID" class="form-select" asp-items="ViewBag.Alunos">
+            <select asp-for="AlunoID" class="form-select" asp-items="ViewBag.Alunos" required>
                 <option value="">-- Selecione um aluno --</option>
             </select>
             <span asp-validation-for="AlunoID" class="text-danger"></span>
@@ -18,7 +18,7 @@
 
         <div class="mb-3">
             <label asp-for="DisciplinaID" class="form-label">Disciplina</label>
-            <select asp-for="DisciplinaID" class="form-select" asp-items="ViewBag.Disciplinas">
+            <select asp-for="DisciplinaID" class="form-select" asp-items="ViewBag.Disciplinas" required>
                 <option value="">-- Selecione uma disciplina --</option>
             </select>
             <span asp-validation-for="DisciplinaID" class="text-danger"></span>
