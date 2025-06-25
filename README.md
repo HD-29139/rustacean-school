@@ -1,5 +1,9 @@
 # Escola Rustcean
 
+<p align="center">
+  <img src="https://github.com/HD-29139/rustacean-school/assets/school.gif" width="720">
+</p>
+
 Uma aplicação web simples para gerenciamento escolar, criada no padrão **MVC (Model-View-Controller)** usando **ASP.NET Core**, **Entity Framework (Code First)**, e layout responsivo com **Bootstrap**.
 
 ---
