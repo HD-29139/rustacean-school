@@ -41,7 +41,7 @@ public class DisciplinaController : Controller
     }
 
     [HttpPost]
-    public IActionResult Update(Disciplina disciplina)
+    public IActionResult Edit(Disciplina disciplina)
     {
         DisciplinaRepository.EditarDisciplina(disciplina);
         return RedirectToAction("Index");

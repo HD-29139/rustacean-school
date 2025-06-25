@@ -49,7 +49,7 @@ public class MatriculaController : Controller
     }
 
     [HttpPost]
-    public IActionResult Update(Matricula matricula)
+    public IActionResult Edit(Matricula matricula)
     {
             MatriculaRepository.EditarMatricula(matricula);
             return RedirectToAction("Index");

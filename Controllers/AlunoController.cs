@@ -41,7 +41,7 @@ public class AlunoController : Controller
     }
 
     [HttpPost]
-    public IActionResult Update(Aluno aluno)
+    public IActionResult Edit(Aluno aluno)
     {
         alunoRepository.EditarAluno(aluno);
         return RedirectToAction("Index");

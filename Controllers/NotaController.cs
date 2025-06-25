@@ -47,7 +47,7 @@ public class NotaController : Controller
     }
 
     [HttpPost]
-    public IActionResult Update(Nota nota)
+    public IActionResult Edit(Nota nota)
     {
             NotaRepository.EditarNota(nota);
             return RedirectToAction("Index");
