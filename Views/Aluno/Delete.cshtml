@@ -5,10 +5,11 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Remover Aluno</h1>
-        <div class="mb-3">
-        <h1 class="display-4">Quer mesmo remover o aluno (@Model.Nome)?</h1>
-        <a type="submit" class="btn btn-danger" asp-controller="Aluno" asp-action="Remove" asp-route-id="@Model.AlunoID">Remover</a>
-        <a type="submit" class="btn btn-primary" asp-controller="Aluno" asp-action="Index">Voltar</a>
+    <h1 class="rust-font">Remoção do aluno </h1>
+        <div class="Ferris">
+          <img src="@Url.Content("~/img/173-1736275_explain-alarmed-ferris-convention-rust-lang-clipart-3155935025.png")" alt="Rustacean Logo" width="300" class="FerrisComum" />
+        <p class="Introp">Quer mesmo remover o aluno (@Model.Nome)?</p>
+        <a type="submit" class="botaoRemover" asp-controller="Aluno" asp-action="Remove" asp-route-id="@Model.AlunoID">Remover</a>
+        <a type="submit" class="botaoVoltar" asp-controller="Aluno" asp-action="Index">Voltar</a>
         </div>
 </div>
