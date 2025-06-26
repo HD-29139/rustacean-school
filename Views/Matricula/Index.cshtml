@@ -34,10 +34,10 @@
                     <th scope="row">@contador</th>
                     <td>@matricula.Aluno.Nome</td>
                     <td>@matricula.Disciplina.Nome</td>
-                    <td><a type="button" class="btn btn-outline-primary" asp-controller="Matricula" asp-action="Delete" asp-route-id="@matricula.MatriculaID" >Remover
+                    <td><a type="button" class="botaoRemover" asp-controller="Matricula" asp-action="Delete" asp-route-id="@matricula.MatriculaID" >Remover
                             Matricula</a>
                     </td>
-                    <td><a type="button" class="btn btn-outline-primary" asp-controller="Matricula" asp-action="Edit" asp-route-id="@matricula.MatriculaID">Editar
+                    <td><a type="button" class="botaoEditar" asp-controller="Matricula" asp-action="Edit" asp-route-id="@matricula.MatriculaID">Editar
                             Matricula</a>
                     </td>
                 </tr>
