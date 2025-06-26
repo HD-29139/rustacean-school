@@ -131,12 +131,24 @@ body {
 .diego:hover,
 .jeff:hover,
 .arthur:hover {
-  background: linear-gradient(145deg, #3c3c3c, #2e2e2e);
+  background: linear-gradient(145deg, #4a4a4a, #2e2e2e);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
   transform:  translateY(-5px);
   cursor: pointer;
   
 }
+@media (max-width: 768px) {
+  .containerPerfil {
+    flex-direction: column;
+    align-items: center;
+  }
+  .diego, .jeff, .arthur {
+    width: 90%;
+    margin-bottom: 20px;
+    height: 290px;
+  }
+}
+
 
 .fotoDiego, .fotoJefferson,.fotoArthur {
   width: 120px;
@@ -147,12 +159,24 @@ body {
   margin-bottom: 10px;
 }
 
+@media (max-width: 768px) {
+  .fotoDiego, .fotoJefferson, .fotoArthur {
+    width: 100px;
+    height: 100px;
+  }
+}
+
 .NomeDiego, .NomeJefferson,.NomeArthur {
   font-size: 24px;
   font-weight: bold;
   margin-bottom: 10px;
 }
-
+@media (max-width: 768px) {
+  .NomeDiego, .NomeJefferson, .NomeArthur {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+}
 
 .Infor {
   list-style: none;
@@ -164,18 +188,38 @@ body {
   margin: 8px 0;
   font-size: 14px;
 }
-
 .customnavbar a,
 .customnavbar .nav-link {
   color: #e5e5e5 !important;
   text-decoration: none !important;
-  
+  position: relative;
+  padding: 6px 10px;    
+  transition: color 0.3s ease, background-color 0.3s ease;
+  display: inline-block; 
+}
+
+/* Sublinhado  */
+.customnavbar a::after,
+.customnavbar .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #D99028;
+  transition: width 0.3s ease;
 }
 
 .customnavbar a:hover,
 .customnavbar .nav-link:hover {
-  background-color:  #80350fa1;
-  border-radius: 10px;
+  color: #fff !important;
+  background-color: rgba(222, 106, 50, 0.15);
+  border-radius: 8px;
+}
+
+.customnavbar a:hover::after,
+.customnavbar .nav-link:hover::after {
   width: 100%;
 }
 
@@ -505,4 +549,19 @@ a.botaoVoltarDentro:hover {
     height: auto;
     visibility: visible;
   }
+}
+.divisorbotaolista {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.divisorbotaolista .botaoEditar,
+.divisorbotaolista .botaoRemover {
+  margin: 0;
+  width: auto;
+  height: 40px;
+  padding: 8px 12px;
+  font-size: 14px;
 }
