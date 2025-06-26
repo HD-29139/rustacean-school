@@ -349,12 +349,82 @@ text-decoration: none;
     margin: 10px auto;   
   }
 }
+a.botaoRemoverDentro{ 
+  background-color: #b7410e;
+  color: #F5F5F5;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 40px;
+}
+a.botaoRemoverDentro:hover {
+  background-color: #99310a; 
+  color: #ffffff;
+}
+a.botaoVoltarDentro{
+  background-color: #4a4a4a;
+  color: #F5F5F5;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 40px;
+}
+a.botaoVoltarDentro:hover {
+  background-color: #2f2f2f;
+  color: #ffffff;
+}
+.botaoRemoverSimples{
+  .meu-botao-simples {
+    background-color: #767070;
+    color: #F5F5F5;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 40px;
+    transition: background-color 0.3s ease;
+}
+
+.botaoRemoverSimples:hover {
+    background-color: #5a5a5a;
+}
+}
 
 /* Aqui é a parte de personalizar os Ferris do site */
 .Ferris{
   display: flex;
   align-items: center;
   animation: pulsar 1.5s infinite ease-in-out;
+  opacity: 0;     
+  transform: translateY(20px);   
+  animation: fadeIn 1.5s ease-out forwards;
+  animation-delay: 0.3s;    
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 .textoRustacean{
  background: linear-gradient(145deg, #3c3c3c, #2e2e2e);
@@ -413,5 +483,26 @@ text-decoration: none;
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    display: flex !important; /* força mostrar a área do menu */
+    flex-direction: column;
+  }
+
+  .navITEM {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    font-size: 18px;
+    padding: 5px;
+    opacity: 1;
+    transform: none;
+    animation: none;
+    height: auto;
+    visibility: visible;
   }
 }
