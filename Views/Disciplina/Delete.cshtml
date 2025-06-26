@@ -1,11 +1,13 @@
-﻿@model Disciplina
+﻿
+
+@model Disciplina
 
 @{
     ViewData["Title"] = "Deleting Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Remover Aluno</h1>
+    <h1 class="display-4">Remover Disciplina</h1>
         <div class="mb-3">
         <h1 class="display-4">Quer mesmo remover a disciplina (@Model.Nome)?</h1>
         <a type="submit" class="btn btn-danger" asp-controller="Disciplina" asp-action="Remove" asp-route-id="@Model.DisciplinaID">Remover</a>
