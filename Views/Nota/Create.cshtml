@@ -6,6 +6,10 @@
 
 <form asp-controller="Nota" asp-action="Create" method="post">
     <div class="mb-3">
+         <div class="Ferris">
+        <img src="@Url.Content("~/img/rustacean-orig-noshadow-56857821.png")" alt="Rustacean Logo" width="240" class="FerrisComum" />
+            <p class="Introp">Veja sua Nota sendo adicionada!</p>
+</div>
         <label asp-for="MatriculaID" class="form-label">Matrícula</label>
         <select asp-for="MatriculaID" asp-items="ViewBag.Matriculas" class="form-select" required>
             <option value="">Selecione uma matrícula</option>
