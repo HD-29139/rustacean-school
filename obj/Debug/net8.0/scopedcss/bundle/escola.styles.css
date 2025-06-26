@@ -35,13 +35,6 @@ button.accept-policy[b-l4mjwkx4ag] {
   line-height: inherit;
 }
 
-.footer[b-l4mjwkx4ag] {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
-}
 html[b-l4mjwkx4ag], body[b-l4mjwkx4ag] {
   display: flex;
   flex-direction: column; 
@@ -67,8 +60,8 @@ header[b-l4mjwkx4ag] {
 
 @media (max-width: 800px) {
   header[b-l4mjwkx4ag] {
-    height: auto; /* Ajusta a altura automaticamente */
-    padding: 20px; /* Adiciona espaço interno */
+    height: auto; 
+    padding: 20px; 
   }
 }
 .customnavbar[b-l4mjwkx4ag]{
@@ -85,9 +78,9 @@ header[b-l4mjwkx4ag] {
 }
 @media (max-width: 768px) {
   .customnavbar[b-l4mjwkx4ag] {
-    flex-direction: row; /* Ajusta para coluna em telas menores */
-    height: auto; /* Permite altura dinâmica */
-    padding: 15px; /* Adiciona um pouco mais de espaço interno */
+    flex-direction: row; 
+    height: auto; 
+    padding: 15px; 
     justify-content: flex-start;
     align-items: center;
   }
@@ -113,9 +106,9 @@ a[b-l4mjwkx4ag]{
 
 .logo[b-l4mjwkx4ag] {
   animation: girar-b-l4mjwkx4ag 6s linear infinite;
-  width: 80px;
-  height: 80px;
-  margin-right: 10px;
+   width: 65px; 
+   height: 65px; 
+  /* margin-right: 5px; */
   }
 
   @media (max-width: 768px) {
@@ -125,6 +118,7 @@ a[b-l4mjwkx4ag]{
       margin-right: 5px;
     }
   }
+  
 @keyframes girar-b-l4mjwkx4ag {
   from {
     transform: rotate(0deg);
@@ -133,8 +127,8 @@ a[b-l4mjwkx4ag]{
     transform: rotate(360deg);
   }
 }
-.footerlayout[b-l4mjwkx4ag] {
-  background: linear-gradient(135deg, #1E1E1E, #2A2D2F, #43484B);
+.footerlayout.logo[b-l4mjwkx4ag] {
+  
   width: 100%;
   display: flex;
   justify-content: center;
@@ -148,5 +142,18 @@ a[b-l4mjwkx4ag]{
   bottom: 0;
   text-decoration: none;
   cursor: default;
+}
+
+.footerlayout[b-l4mjwkx4ag]{
+  background: linear-gradient(135deg, #1E1E1E, #2A2D2F, #43484B);
+  color: #e5e5e5;
+  font-family: 'Rajdhani', sans-serif;
+  padding: 25px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  position: absolute;
 }
 
