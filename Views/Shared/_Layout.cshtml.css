@@ -1,11 +1,6 @@
 ﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
-}
 
 a {
   color: #0077cc;
@@ -45,4 +40,110 @@ button.accept-policy {
   width: 100%;
   white-space: nowrap;
   line-height: 60px;
+}
+html, body {
+  display: flex;
+  flex-direction: column; 
+  min-height: 100vh; 
+  margin: 0;
+  padding: 0;
+  font-family: 'Rajdhani', sans-serif;
+  background-color: #F5F5F5;
+  color: #241C1C;
+  box-sizing: border-box;
+}
+.container {
+  flex: 1; 
+}
+
+
+header {
+  background-color: #fffefd;
+  text-align: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #1E1E1E, #2A2D2F, #43484B);
+}
+
+@media (max-width: 800px) {
+  header {
+    height: auto; /* Ajusta a altura automaticamente */
+    padding: 20px; /* Adiciona espaço interno */
+  }
+}
+.customnavbar{
+  border-radius: 10px;
+  background-color: #A23E12 !important;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3) !important;
+  font-family: 'Rajdhani', sans-serif;
+  height: 150px;
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .customnavbar {
+    flex-direction: row; /* Ajusta para coluna em telas menores */
+    height: auto; /* Permite altura dinâmica */
+    padding: 15px; /* Adiciona um pouco mais de espaço interno */
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+/* Não mexer--------------------------------------------------
+.navbar-R {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+  font-family: 'Rajdhani', sans-serif;
+  list-style: none;
+  font-size: 25px;
+  color: #F5F5F5!important;
+  height: 100%;
+}*/
+
+a{
+  text-decoration: none;
+  color: #e5e5e5;
+}
+
+.logo {
+  animation: girar 6s linear infinite;
+  width: 80px;
+  height: 80px;
+  margin-right: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .logo {
+      width: 50px; /* Reduz o tamanho da imagem */
+      height: 50px; /* Reduz o tamanho da imagem */
+      margin-right: 5px;
+    }
+  }
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.footerlayout {
+  background: linear-gradient(135deg, #1E1E1E, #2A2D2F, #43484B);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #e5e5e5;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
 }
