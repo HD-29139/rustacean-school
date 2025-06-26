@@ -8,9 +8,12 @@
 
 <div class="text-center">
     <h1 class="display-4">Remover Disciplina</h1>
-        <div class="mb-3">
-        <h1 class="display-4">Quer mesmo remover a disciplina (@Model.Nome)?</h1>
-        <a type="submit" class="btn btn-danger" asp-controller="Disciplina" asp-action="Remove" asp-route-id="@Model.DisciplinaID">Remover</a>
-        <a type="submit" class="btn btn-primary" asp-controller="Disciplina" asp-action="Index">Voltar</a>
+      <div class="Ferris">
+          <img src="@Url.Content("~/img/173-1736275_explain-alarmed-ferris-convention-rust-lang-clipart-3155935025.png")" alt="Rustacean Logo" width="300" class="FerrisComum" />
+            <p class="Introp">Quer mesmo remover o aluno (@Model.Nome)?</p>
+        
+        <a type="submit" class="botaoRemoverDentro" asp-controller="Disciplina" asp-action="Remove" asp-route-id="@Model.DisciplinaID">Remover</a>
+        <a type="submit" class="botaoVoltarDentro" asp-controller="Disciplina" asp-action="Index">Voltar</a>
         </div>
+        <div class="mb-3">
 </div>
