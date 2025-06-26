@@ -133,7 +133,6 @@ a[b-l4mjwkx4ag]{
     transform: rotate(360deg);
   }
 }
-
 .footerlayout[b-l4mjwkx4ag] {
   background: linear-gradient(135deg, #1E1E1E, #2A2D2F, #43484B);
   width: 100%;
@@ -147,4 +146,7 @@ a[b-l4mjwkx4ag]{
   padding: 20px;
   position: relative;
   bottom: 0;
+  text-decoration: none;
+  cursor: default;
 }
+
