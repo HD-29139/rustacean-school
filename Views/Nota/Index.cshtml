@@ -5,9 +5,9 @@
     var contador = 1;
 }
 <div class="text-center">
-    <h1 class="display-4">Notas</h1>
+    <h1 class="EscR">Notas</h1>
 
-    <a type="button" class="btn btn-success mb-3" asp-controller="Nota" asp-action="Create">Criar Nota</a>
+    <a type="button" class="botaoCriar asp-controller="Nota" asp-action="Create">Criar Nota</a>
 
     <table class="table table-dark table-striped">
         <thead>
@@ -30,8 +30,8 @@
                         <td>@nota.Matricula.Disciplina.Nome</td>
                         <td>@nota.Valor</td>
                         <td>
-                            <a class="btn btn-sm btn-outline-primary" asp-controller="Nota" asp-action="Edit" asp-route-id="@nota.NotaID">Editar</a>
-                            <a class="btn btn-sm btn-outline-danger ms-1" asp-controller="Nota" asp-action="Delete" asp-route-id="@nota.NotaID">Remover</a>
+                            <a class="botaoEditar" asp-controller="Nota" asp-action="Edit" asp-route-id="@nota.NotaID">Editar</a>
+                            <a class="botaoRemover" asp-controller="Nota" asp-action="Delete" asp-route-id="@nota.NotaID">Remover</a>
                         </td>
                     </tr>
                     contador++;
