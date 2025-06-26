@@ -1,4 +1,8 @@
-﻿@model Matricula
+﻿
+
+
+
+@model Matricula
 
 @{
     ViewData["Title"] = "Create Page";
@@ -24,7 +28,7 @@
             <span asp-validation-for="DisciplinaID" class="text-danger"></span>
         </div>
 
-        <button type="submit" class="btn btn-primary">Salvar</button>
-        <a asp-action="Index" class="btn btn-secondary ms-2">Cancelar</a>
+        <button type="submit" class="botaoCriar">Salvar</button>
+        <a asp-action="Index" class="botaoVoltar">Cancelar</a>
     </form>
 </div>
