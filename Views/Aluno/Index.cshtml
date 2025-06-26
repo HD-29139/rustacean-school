@@ -6,11 +6,10 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Alunos</h1>
+    <h1 class="EscR">Alunos</h1>
     <table class="table table-dark">
     <thead>
-        <a type="button" class="btn btn-success" asp-controller="Aluno" asp-action="Create">Criar
-                            Aluno</a>
+        <a type="button" class="botaoperso" asp-controller="Aluno" asp-action="Create">Criar Aluno</a>
         
         <tr>
             
@@ -29,10 +28,10 @@
                 <tr>
                     <th scope="row">@contador</th>
                     <td>@aluno.Nome</td>
-                    <td><a type="button" class="btn btn-outline-primary" asp-controller="Aluno" asp-action="Delete" asp-route-id="@aluno.AlunoID" >Remover
+                    <td><a type="button" class="botaoRemover" asp-controller="Aluno" asp-action="Delete" asp-route-id="@aluno.AlunoID" >Remover
                             aluno</a>
                     </td>
-                    <td><a type="button" class="btn btn-outline-primary" asp-controller="Aluno" asp-action="Edit" asp-route-id="@aluno.AlunoID">Editar
+                    <td><a type="button" class="botaoEditar" asp-controller="Aluno" asp-action="Edit" asp-route-id="@aluno.AlunoID">Editar
                             aluno</a>
                     </td>
                 </tr>
