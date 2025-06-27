@@ -50,7 +50,11 @@ A Nota é atribuída a uma matrícula específica
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
 ```
-2. **Execute o script do banco de dados**
+2. **Crie o banco de dados "school" e Execute o script**
+
+```cmd
+mysql -u root -p school < script.sql
+```
 
 3. **Restaure as dependências**
 
@@ -63,7 +67,7 @@ dotnet restore
 dotnet ef database update
 ```
 
-5. **Execute a aplicação**
+5. **Execute**
 
 ```nushell
 dotnet run
