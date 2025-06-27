@@ -43,6 +43,10 @@ public class DisciplinaController : Controller
     [HttpPost]
     public IActionResult Edit(Disciplina disciplina)
     {
+        if (disciplina.Nome == null)
+        {
+            return View(disciplina);
+        }
         DisciplinaRepository.EditarDisciplina(disciplina);
         return RedirectToAction("Index");
     }
@@ -50,6 +54,10 @@ public class DisciplinaController : Controller
     [HttpPost]
     public IActionResult Create(Disciplina disciplina)
     {
+        if (disciplina.Nome == null)
+        {
+            return View(disciplina);
+        }
         DisciplinaRepository.Create(disciplina);
         return RedirectToAction("Index");
     }
