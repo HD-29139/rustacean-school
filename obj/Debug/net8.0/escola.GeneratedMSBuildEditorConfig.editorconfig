@@ -9,99 +9,99 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = escola
 build_property.RootNamespace = escola
-build_property.ProjectDir = C:\Users\steam\escola\
+build_property.ProjectDir = /home/arthur/Rustaceanschool/rustacean-school/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\steam\escola
+build_property.MSBuildProjectDirectory = /home/arthur/Rustaceanschool/rustacean-school
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/steam/escola/Views/Aluno/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cQ3JlYXRlLmNzaHRtbA==
+[/home/arthur/Rustaceanschool/rustacean-school/Views/Aluno/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bm8vQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/steam/escola/Views/Aluno/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cRGVsZXRlLmNzaHRtbA==
+[/home/arthur/Rustaceanschool/rustacean-school/Views/Aluno/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bm8vRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/steam/escola/Views/Aluno/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cRWRpdC5jc2h0bWw=
+[/home/arthur/Rustaceanschool/rustacean-school/Views/Aluno/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bm8vRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/steam/escola/Views/Aluno/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWx1bm9cSW5kZXguY3NodG1s
+[/home/arthur/Rustaceanschool/rustacean-school/Views/Aluno/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWx1bm8vSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/steam/escola/Views/Disciplina/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY2lwbGluYVxDcmVhdGUuY3NodG1s
+[/home/arthur/Rustaceanschool/rustacean-school/Views/Disciplina/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlzY2lwbGluYS9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/steam/escola/Views/Disciplina/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY2lwbGluYVxEZWxldGUuY3NodG1s
+[/home/arthur/Rustaceanschool/rustacean-school/Views/Disciplina/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlzY2lwbGluYS9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/steam/escola/Views/Disciplina/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY2lwbGluYVxFZGl0LmNzaHRtbA==
+[/home/arthur/Rustaceanschool/rustacean-school/Views/Disciplina/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlzY2lwbGluYS9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/steam/escola/Views/Disciplina/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY2lwbGluYVxJbmRleC5jc2h0bWw=
+[/home/arthur/Rustaceanschool/rustacean-school/Views/Disciplina/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRGlzY2lwbGluYS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/steam/escola/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[/home/arthur/Rustaceanschool/rustacean-school/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/steam/escola/Views/Matricula/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhXENyZWF0ZS5jc2h0bWw=
+[/home/arthur/Rustaceanschool/rustacean-school/Views/Matricula/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWF0cmljdWxhL0NyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/steam/escola/Views/Matricula/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhXERlbGV0ZS5jc2h0bWw=
+[/home/arthur/Rustaceanschool/rustacean-school/Views/Matricula/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWF0cmljdWxhL0RlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/steam/escola/Views/Matricula/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhXEVkaXQuY3NodG1s
+[/home/arthur/Rustaceanschool/rustacean-school/Views/Matricula/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWF0cmljdWxhL0VkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/steam/escola/Views/Matricula/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0cmljdWxhXEluZGV4LmNzaHRtbA==
+[/home/arthur/Rustaceanschool/rustacean-school/Views/Matricula/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTWF0cmljdWxhL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/steam/escola/Views/Nota/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90YVxDcmVhdGUuY3NodG1s
+[/home/arthur/Rustaceanschool/rustacean-school/Views/Nota/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTm90YS9DcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/steam/escola/Views/Nota/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90YVxEZWxldGUuY3NodG1s
+[/home/arthur/Rustaceanschool/rustacean-school/Views/Nota/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTm90YS9EZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/steam/escola/Views/Nota/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90YVxFZGl0LmNzaHRtbA==
+[/home/arthur/Rustaceanschool/rustacean-school/Views/Nota/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTm90YS9FZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/steam/escola/Views/Nota/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTm90YVxJbmRleC5jc2h0bWw=
+[/home/arthur/Rustaceanschool/rustacean-school/Views/Nota/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTm90YS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/steam/escola/Views/Shared/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+[/home/arthur/Rustaceanschool/rustacean-school/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/steam/escola/Views/Shared/_ValidationScriptsPartial.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+[/home/arthur/Rustaceanschool/rustacean-school/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/steam/escola/Views/_ViewImports.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+[/home/arthur/Rustaceanschool/rustacean-school/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/steam/escola/Views/_ViewStart.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+[/home/arthur/Rustaceanschool/rustacean-school/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/steam/escola/Views/Shared/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-tetynaze6x
+[/home/arthur/Rustaceanschool/rustacean-school/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-l4mjwkx4ag

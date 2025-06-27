@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\steam\\escola\\escola.csproj": {}
+    "/home/arthur/Rustaceanschool/rustacean-school/escola.csproj": {}
   },
   "projects": {
-    "C:\\Users\\steam\\escola\\escola.csproj": {
+    "/home/arthur/Rustaceanschool/rustacean-school/escola.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\steam\\escola\\escola.csproj",
+        "projectUniqueName": "/home/arthur/Rustaceanschool/rustacean-school/escola.csproj",
         "projectName": "escola",
-        "projectPath": "C:\\Users\\steam\\escola\\escola.csproj",
-        "packagesPath": "C:\\Users\\steam\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\steam\\escola\\obj\\",
+        "projectPath": "/home/arthur/Rustaceanschool/rustacean-school/escola.csproj",
+        "packagesPath": "/home/arthur/.nuget/packages/",
+        "outputPath": "/home/arthur/Rustaceanschool/rustacean-school/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\steam\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/home/arthur/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
@@ -81,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.411/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/home/arthur/.dotnet/sdk/8.0.302/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
