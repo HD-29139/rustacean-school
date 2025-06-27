@@ -1,4 +1,4 @@
-﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+﻿﻿/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
 
 
@@ -126,8 +126,8 @@ a{
     transform: rotate(360deg);
   }
 }
-.footerlayout.logo {
-  
+.footerlayout {
+  background-color: #A23E12 !important;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -136,23 +136,10 @@ a{
   font-family: 'Rajdhani', sans-serif;
   font-size: 20px;
   text-align: center;
-  padding: 20px;
-  position: relative;
-  bottom: 0;
-  text-decoration: none;
-  cursor: default;
-}
-
-.footerlayout{
-  background: linear-gradient(135deg, #1E1E1E, #2A2D2F, #43484B);
-  color: #e5e5e5;
-  font-family: 'Rajdhani', sans-serif;
   padding: 25px;
-  text-align: center;
-  position: relative;
+  position: relative; 
   bottom: 0;
-  width: 100%;
   height: 100px;
-  position: absolute;
+  cursor: default;
+  text-decoration: none;
 }
-
