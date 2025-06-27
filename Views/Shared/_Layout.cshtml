@@ -1,24 +1,22 @@
-﻿<!DOCTYPE html>
+﻿﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] -Escola </title>
+    <title>@ViewData["Title"] - Escola</title>
+
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/escola.styles.css" asp-append-version="true" />
 </head>
 <body class="d-flex flex-column min-vh-100">
     <header>
-
         <nav class="customnavbar">
             <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" alt="Logo Rust" class="logo">
-
             <div class="container-fluid">
-            
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navITEM">
-                <a class="navbar-R" asp-area="" asp-controller="Home" asp-action="Index">RUST</a>
+                        <a class="navbar-R" asp-area="" asp-controller="Home" asp-action="Index">RUST</a>
                         <li class="nav-item">
                             <a class="nav-link" asp-area="" asp-controller="Aluno" asp-action="Index">Alunos</a>
                         </li>
@@ -36,15 +34,15 @@
             </div>
         </nav>
     </header>
-    <div class="container flex-grow-1">
-        <main role="main" class="pb-3">
+
+    
+     <main role="main" class="flex-grow-1 pb-3 container">
             @RenderBody()
         </main>
-    </div> 
+    
 
     <footer class="footerlayout">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" alt="Logo Rust" class="logo">
-      
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Rust_programming_language_black_logo.svg" alt="Logo Rust" class="logoFooter">
     </footer>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
