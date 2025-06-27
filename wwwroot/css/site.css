@@ -18,7 +18,8 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+  margin: 0px;
+  padding: 0px;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
@@ -41,7 +42,7 @@ body {
   padding: 12px 18px;
   border-radius: 6px;
   font-family: 'Rajdhani', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
 }
