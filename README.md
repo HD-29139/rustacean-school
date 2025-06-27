@@ -23,7 +23,7 @@ Uma aplicação web simples para gerenciamento escolar, criada no padrão **MVC 
 
 - ASP.NET Core MVC (.NET 8.0)
 - Entity Framework Core (Code First)
-- SQL Server LocalDB
+- MySQL
 - Razor Pages (Views)
 - Bootstrap
 
