@@ -8,15 +8,17 @@
     <h1 class="rust-font">Adicionar Aluno</h1>
     <form asp-controller="Aluno" asp-action="Create" method="post">
         <div class="mb-3">
-        <label for="nome" class="form-label">Nome do aluno</label>
-        <input type="text" asp-for="Nome" class="form-control" id="nome" placeholder="Nome" required>
+            <label for="nome" class="form-label">Nome do aluno</label>
+            <input type="text" pattern="[A-Za-zÀ-ÿ\s]{3,35}" minlength="3" maxlength="35"
+                title="DIGITE APENAS LETRAS E ESPAÇOS!! min=3 max=35" asp-for="Nome" class="form-control" id="nome"
+                placeholder="Nome" required>
+            <span asp-validation-for="Nome" class="text-danger"></span>
         </div>
         <button type="submit" class="botaoCriar">Criar</button>
     </form>
-      <div class="Ferris">
-        <img src="@Url.Content("~/img/rustacean-orig-noshadow-56857821.png")" alt="Rustacean Logo" width="300" class="FerrisComum" />
-            <p class="Introp">Adicione aqui o Rustacean!</p>
-
-      </div>
-
+    <div class="Ferris">
+        <img src="@Url.Content("~/img/rustacean-orig-noshadow-56857821.png")" alt="Rustacean Logo" width="300"
+            class="FerrisComum" />
+        <p class="Introp">Adicione aqui o Rustacean!</p>
+    </div>
 </div>
