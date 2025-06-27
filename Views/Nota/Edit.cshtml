@@ -5,7 +5,9 @@
 }
 
 <form asp-controller="Nota" asp-action="Edit" method="post">
-    <div class="mb-3">
+    
+<div class="text-center">
+        <h1 class="rust-font">Editar Nota</h1>
         <label asp-for="MatriculaID" class="form-label">Matrícula</label>
         <select asp-for="MatriculaID" asp-items="ViewBag.Matriculas" class="form-select" required>
             <option value="">Selecione uma matrícula</option>
@@ -19,6 +21,6 @@
         <span asp-validation-for="Valor" class="text-danger"></span>
     </div>
 
-    <button type="submit" class="btn btn-primary">Salvar</button>
+    <button type="submit" class="botaoCriar">Salvar</button>
     <input type="hidden" asp-for="NotaID" />
 </form>

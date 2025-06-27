@@ -1,4 +1,8 @@
-﻿@model Matricula
+﻿
+
+
+
+@model Matricula
 
 @{
     ViewData["Title"] = "Create Page";
@@ -6,6 +10,10 @@
 
 <div class="container">
     <h2 class="my-4 text-center">Cadastrar Matrícula</h2>
+     <div class="Ferris">
+        <img src="@Url.Content("~/img/rustacean-orig-noshadow-56857821.png")" alt="Rustacean Logo" width="240" class="FerrisComum" />
+            <p class="Introp">Se cadastre para não perder as novidades!</p>
+</div>
 
     <form asp-controller="Matricula" asp-action="Create" method="post">
         <div class="mb-3">
@@ -24,7 +32,7 @@
             <span asp-validation-for="DisciplinaID" class="text-danger"></span>
         </div>
 
-        <button type="submit" class="btn btn-primary">Salvar</button>
-        <a asp-action="Index" class="btn btn-secondary ms-2">Cancelar</a>
+        <button type="submit" class="botaoCriar">Salvar</button>
+        <a asp-action="Index" class="botaoVoltar">Cancelar</a>
     </form>
 </div>

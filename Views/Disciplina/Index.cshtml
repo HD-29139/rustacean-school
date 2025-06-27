@@ -6,41 +6,47 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Disciplinas</h1>
+    <h1 class="EscR">Disciplinas</h1>
+    <div class="Ferris">
+        <img src="@Url.Content("~/img/rustacean-orig-noshadow-56857821.png")" alt="Rustacean Logo" width="240" class="FerrisComum" />
+        <p class="Introp">Crie uma Disciplina e aprimore o seu conhecimento</p>
+    </div>
+
+    <a type="button" class="botaoCriar" asp-controller="Disciplina" asp-action="Create">Criar Disciplina</a>
+
     <table class="table table-dark">
-    <thead>
-        <a type="button" class="btn btn-success" asp-controller="Disciplina" asp-action="Create">Criar
-                            Disciplina</a>
-        
-        <tr>
-            
-            <th scope="col">#</th>
-            <th scope="col">Nome da Disciplina</th>
-            <th scope="col"></th>
-            <th scope="col"></th>
-        </tr>
-    </thead>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome da Disciplina</th>
+                <th scope="col">Ações</th>
+            </tr>
+        </thead>
 
-    @if (Model != null && Model.Any())
-    {
-        foreach (Disciplina disciplina in Model)
-        {
         <tbody>
+            @if (Model != null && Model.Any())
+            {
+                foreach (Disciplina disciplina in Model)
+                {
+                    <tr>
+                        <th scope="row">@contador</th>
+                        <td>@disciplina.Nome</td>
+                        <td>
+                            <div class="divisorbotaolista">
+                                <a class="botaoEditar" asp-controller="Disciplina" asp-action="Edit" asp-route-id="@disciplina.DisciplinaID">Editar Disciplina</a>
+                                <a class="botaoRemover" asp-controller="Disciplina" asp-action="Delete" asp-route-id="@disciplina.DisciplinaID">Remover Disciplina</a>
+                            </div>
+                        </td>
+                    </tr>
+                    contador++;
+                }
+            }
+            else
+            {
                 <tr>
-                    <th scope="row">@contador</th>
-                    <td>@disciplina.Nome</td>
-                    <td><a type="button" class="btn btn-outline-primary" asp-controller="Disciplina" asp-action="Delete" asp-route-id="@disciplina.DisciplinaID" >Remover
-                            Disciplina</a>
-                    </td>
-                    <td><a type="button" class="btn btn-outline-primary" asp-controller="Disciplina" asp-action="Edit" asp-route-id="@disciplina.DisciplinaID">Editar
-                            Disciplina</a>
-                    </td>
+                    <td colspan="3">Nenhuma disciplina cadastrada.</td>
                 </tr>
-            </tbody>
-            contador++;
-        }
-    }
-            </table>
-
-
+            }
+        </tbody>
+    </table>
 </div>

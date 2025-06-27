@@ -1,16 +1,23 @@
-﻿@model Disciplina
+﻿
+
+@model Disciplina
 
 @{
     ViewData["Title"] = "Create Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Adicionar Disciplina</h1>
+    <h1 class="rust-font">Adicionar Disciplina</h1>
+     <div class="Ferris">
+        <img src="@Url.Content("~/img/rustacean-orig-noshadow-56857821.png")" alt="Rustacean Logo" width="240" class="FerrisComum" />
+            <p class="Introp">Crie a disciplina!</p>
+</div>
+    
     <form asp-controller="Disciplina" asp-action="Create" method="post">
         <div class="mb-3">
         <label for="nome" class="form-label">Nome da disciplina</label>
         <input type="text" asp-for="Nome" class="form-control" id="nome" placeholder="Nome" required>
-        <button type="submit" class="btn btn-primary">Criar</button>
+        <button type="submit" class="botaoCriar">Criar</button>
         </div>
     </form>
 

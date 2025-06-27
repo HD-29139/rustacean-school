@@ -4,45 +4,52 @@
     ViewData["Title"] = "Nota Page";
     var contador = 1;
 }
+
 <div class="text-center">
-    <h1 class="display-4">Notas</h1>
+    <h1 class="EscR">Notas</h1>
+    <div class="Ferris">
+        <img src="@Url.Content("~/img/rustacean-orig-noshadow-56857821.png")" alt="Rustacean Logo" width="240" class="FerrisComum" />
+        <p class="Introp">Aqui é onde o resultado de seus estudos vai estar! Fique Atualizado !</p>
+    </div>
+</div>
 
-    <a type="button" class="btn btn-success mb-3" asp-controller="Nota" asp-action="Create">Criar Nota</a>
+<a type="button" class="botaoCriar asp-controller="Nota" asp-action="Create">Criar Nota</a>
 
-    <table class="table table-dark table-striped">
-        <thead>
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">Aluno</th>
-                <th scope="col">Disciplina</th>
-                <th scope="col">Nota</th>
-                <th scope="col">Ações</th>
-            </tr>
-        </thead>
-        <tbody>
-            @if (Model != null && Model.Any())
-            {
-                foreach (Nota nota in Model)
-                {
-                    <tr>
-                        <th scope="row">@contador</th>
-                        <td>@nota.Matricula.Aluno.Nome</td>
-                        <td>@nota.Matricula.Disciplina.Nome</td>
-                        <td>@nota.Valor</td>
-                        <td>
-                            <a class="btn btn-sm btn-outline-primary" asp-controller="Nota" asp-action="Edit" asp-route-id="@nota.NotaID">Editar</a>
-                            <a class="btn btn-sm btn-outline-danger ms-1" asp-controller="Nota" asp-action="Delete" asp-route-id="@nota.NotaID">Remover</a>
-                        </td>
-                    </tr>
-                    contador++;
-                }
-            }
-            else
+<table class="table table-dark table-striped">
+    <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Aluno</th>
+            <th scope="col">Disciplina</th>
+            <th scope="col">Nota</th>
+            <th scope="col">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model != null && Model.Any())
+        {
+            foreach (Nota nota in Model)
             {
                 <tr>
-                    <td colspan="5">Nenhuma nota cadastrada.</td>
+                    <th scope="row">@contador</th>
+                    <td>@nota.Matricula.Aluno.Nome</td>
+                    <td>@nota.Matricula.Disciplina.Nome</td>
+                    <td>@nota.Valor</td>
+                    <td>
+                        <div class="divisorbotaolista">
+                            <a class="botaoEditar" asp-controller="Nota" asp-action="Edit" asp-route-id="@nota.NotaID">Editar</a>
+                            <a class="botaoRemover" asp-controller="Nota" asp-action="Delete" asp-route-id="@nota.NotaID">Remover</a>
+                        </div>
+                    </td>
                 </tr>
+                contador++;
             }
-        </tbody>
-    </table>
-</div>
+        }
+        else
+        {
+            <tr>
+                <td colspan="5">Nenhuma nota cadastrada.</td>
+            </tr>
+        }
+    </tbody>
+</table>
