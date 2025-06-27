@@ -43,6 +43,10 @@ public class AlunoController : Controller
     [HttpPost]
     public IActionResult Edit(Aluno aluno)
     {
+        if (aluno.Nome == null)
+        {
+            return View(aluno);
+        }
         alunoRepository.EditarAluno(aluno);
         return RedirectToAction("Index");
     }
@@ -50,8 +54,13 @@ public class AlunoController : Controller
     [HttpPost]
     public IActionResult Create(Aluno aluno)
     {
+        if (aluno.Nome == null)
+        {
+            return View(aluno);
+        }
         alunoRepository.Create(aluno);
         return RedirectToAction("Index");
+
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
