@@ -1,5 +1,3 @@
-# Escola Rustcean
-
 <p align="center">
   <img src="https://github.com/HD-29139/rustacean-school/blob/main/assets/school.gif" width="720">
 </p>
