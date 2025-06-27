@@ -1,5 +1,4 @@
-﻿@Html.ValidationSummary(true, "", new { @class = "text-danger" })
-@model Matricula
+﻿@model Matricula
 
 @{
     ViewData["Title"] = "Edit Page";
@@ -21,7 +20,7 @@
         <select asp-for="DisciplinaID" class="form-select" asp-items="ViewBag.Disciplinas" required></select>
         <span asp-validation-for="DisciplinaID" class="text-danger"></span>
     </div>
-
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
     <button type="submit" class="botaoCriar">Salvar</button>
     <a asp-action="Index" class="botaoVoltar">Cancelar</a>
     <input type="hidden" asp-for="MatriculaID" />
