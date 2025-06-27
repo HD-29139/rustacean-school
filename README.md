@@ -40,8 +40,35 @@ Cada Matrícula é uma relação de um aluno e uma disciplina
 
 A Nota é atribuída a uma matrícula específica
 ```
+---
 
+## Como rodar o projeto
 
+1. **Clone o repositório**  
+
+```nushell
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
+```
+2. **Execute o script do banco de dados**
+
+3. **Restaure as dependências**
+
+```nushell
+dotnet restore
+```
+4. **Atualize o banco de dados**
+
+```nushell
+dotnet ef database update
+```
+
+5. **Execute a aplicação**
+
+```nushell
+dotnet run
+```
+---
 <p align="center">
   <img src="https://github.com/HD-29139/rustacean-school/blob/main/assets/RUST.gif" width="320">
 </p>
