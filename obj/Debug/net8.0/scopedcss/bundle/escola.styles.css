@@ -1,9 +1,6 @@
 /* _content/escola/Views/Shared/_Layout.cshtml.rz.scp.css */
-/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
 
-
-a[b-tetynaze6x] {
+﻿a[b-tetynaze6x] {
   color: #0077cc;
 }
 
@@ -36,20 +33,16 @@ button.accept-policy[b-tetynaze6x] {
 }
 
 html[b-tetynaze6x], body[b-tetynaze6x] {
-  display: flex;
-  flex-direction: column; 
-  min-height: 100vh; 
+  height: 100%;
   margin: 0;
   padding: 0;
-  font-family: 'Rajdhani', sans-serif;
-  background-color: #F5F5F5;
-  color: #241C1C;
-  box-sizing: border-box;
-}
-.container[b-tetynaze6x] {
-  flex: 1; 
+  display: flex;
+  flex-direction: column;
 }
 
+.flex-grow-1[b-tetynaze6x] {
+  flex: 0;
+}
 
 header[b-tetynaze6x] {
   background-color: #fffefd;
@@ -60,11 +53,12 @@ header[b-tetynaze6x] {
 
 @media (max-width: 800px) {
   header[b-tetynaze6x] {
-    height: auto; 
-    padding: 20px; 
+    height: auto;
+    padding: 20px;
   }
 }
-.customnavbar[b-tetynaze6x]{
+
+.customnavbar[b-tetynaze6x] {
   border-radius: 10px;
   background-color: #A23E12 !important;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3) !important;
@@ -76,49 +70,36 @@ header[b-tetynaze6x] {
   align-items: center;
   justify-content: space-between;
 }
+
 @media (max-width: 768px) {
   .customnavbar[b-tetynaze6x] {
-    flex-direction: row; 
-    height: auto; 
-    padding: 15px; 
+    flex-direction: row;
+    height: auto;
+    padding: 15px;
     justify-content: flex-start;
     align-items: center;
   }
 }
-/* Não mexer--------------------------------------------------
-.navbar-R {
-  display: flex;
-  justify-content:space-around;
-  align-items: center;
-  gap: 20px;
-  padding: 10px;
-  font-family: 'Rajdhani', sans-serif;
-  list-style: none;
-  font-size: 25px;
-  color: #F5F5F5!important;
-  height: 100%;
-}*/
 
-a[b-tetynaze6x]{
+a[b-tetynaze6x] {
   text-decoration: none;
   color: #e5e5e5;
 }
 
 .logo[b-tetynaze6x] {
   animation: girar-b-tetynaze6x 6s linear infinite;
-   width: 65px; 
-   height: 65px; 
-  /* margin-right: 5px; */
-  }
+  width: 65px;
+  height: 65px;
+}
 
-  @media (max-width: 768px) {
-    .logo[b-tetynaze6x] {
-      width: 50px; /* Reduz o tamanho da imagem */
-      height: 50px; /* Reduz o tamanho da imagem */
-      margin-right: 5px;
-    }
+@media (max-width: 768px) {
+  .logo[b-tetynaze6x] {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
   }
-  
+}
+
 @keyframes girar-b-tetynaze6x {
   from {
     transform: rotate(0deg);
@@ -127,20 +108,31 @@ a[b-tetynaze6x]{
     transform: rotate(360deg);
   }
 }
+
 .footerlayout[b-tetynaze6x] {
   background-color: #A23E12 !important;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #e5e5e5;
-  font-family: 'Rajdhani', sans-serif;
-  font-size: 20px;
-  text-align: center;
-  padding: 25px;
-  position: relative; 
-  bottom: 0;
-  height: 100px;
+  padding: 30px;
+  height: 150px;
   cursor: default;
   text-decoration: none;
+  flex-shrink: 0
+  
+}
+
+.logoFooter[b-tetynaze6x] {
+  animation: girar-b-tetynaze6x 6s linear infinite;
+  width: 60px;
+  height: 60px;
+}
+
+@media (max-width: 768px) {
+  .logoFooter[b-tetynaze6x] {
+    width: 45px;
+    height: 45px;
+    margin-right: 5px;
+  }
 }
