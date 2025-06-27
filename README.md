@@ -45,8 +45,8 @@ A Nota é atribuída a uma matrícula específica
 1. **Clone o repositório**  
 
 ```nushell
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/HD-29139/rustacean-school.git
+cd rustacean-school
 ```
 2. **Crie o banco de dados "school" e Execute o script**
 
