@@ -51,17 +51,17 @@ public class MatriculaController : Controller
     [HttpPost]
     public IActionResult Edit(Matricula matricula)
     {
-         bool jaExiste = BancoContext.Matriculas
-        .Any(m => m.AlunoID == matricula.AlunoID && m.DisciplinaID == matricula.DisciplinaID);
+        bool jaExiste = BancoContext.Matriculas
+       .Any(m => m.AlunoID == matricula.AlunoID && m.DisciplinaID == matricula.DisciplinaID);
 
-    if (jaExiste)
-    {
-        ModelState.AddModelError("", "Este aluno já está matriculado nesta disciplina.");
+        if (jaExiste)
+        {
+            ModelState.AddModelError("", "Este aluno já está matriculado nesta disciplina.");
 
-        ViewBag.Alunos = new SelectList(BancoContext.Alunos, "AlunoID", "Nome");
-        ViewBag.Disciplinas = new SelectList(BancoContext.Disciplinas, "DisciplinaID", "Nome");
-        return View(matricula);
-    }
+            ViewBag.Alunos = new SelectList(BancoContext.Alunos, "AlunoID", "Nome");
+            ViewBag.Disciplinas = new SelectList(BancoContext.Disciplinas, "DisciplinaID", "Nome");
+            return View(matricula);
+        }
         MatriculaRepository.EditarMatricula(matricula);
         return RedirectToAction("Index");
     }
@@ -69,17 +69,17 @@ public class MatriculaController : Controller
     [HttpPost]
     public IActionResult Create(Matricula matricula)
     {
-                 bool jaExiste = BancoContext.Matriculas
+        bool jaExiste = BancoContext.Matriculas
         .Any(m => m.AlunoID == matricula.AlunoID && m.DisciplinaID == matricula.DisciplinaID);
 
-    if (jaExiste)
-    {
-        ModelState.AddModelError("", "Este aluno já está matriculado nesta disciplina.");
+        if (jaExiste)
+        {
+            ModelState.AddModelError("", "Este aluno já está matriculado nesta disciplina.");
 
-        ViewBag.Alunos = new SelectList(BancoContext.Alunos, "AlunoID", "Nome");
-        ViewBag.Disciplinas = new SelectList(BancoContext.Disciplinas, "DisciplinaID", "Nome");
-        return View(matricula);
-    }
+            ViewBag.Alunos = new SelectList(BancoContext.Alunos, "AlunoID", "Nome");
+            ViewBag.Disciplinas = new SelectList(BancoContext.Disciplinas, "DisciplinaID", "Nome");
+            return View(matricula);
+        }
         MatriculaRepository.Create(matricula);
         return RedirectToAction("Index");
     }
