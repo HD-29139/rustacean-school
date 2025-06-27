@@ -17,7 +17,7 @@
 
     <div class="mb-3">
         <label asp-for="Valor" class="form-label">Nota</label>
-        <input asp-for="Valor" class="form-control" required/>
+        <input asp-for="Valor" class="form-control" pattern="[1-0]" min="0" max="10" step="0.01" title="DIGITE APENAS NUMEROS, VIRGULA/PONTO!!" required/>
         <span asp-validation-for="Valor" class="text-danger"></span>
     </div>
 
