@@ -51,8 +51,8 @@ public class MatriculaController : Controller
     [HttpPost]
     public IActionResult Edit(Matricula matricula)
     {
-            MatriculaRepository.EditarMatricula(matricula);
-            return RedirectToAction("Index");
+        MatriculaRepository.EditarMatricula(matricula);
+        return RedirectToAction("Index");
     }
 
     [HttpPost]
